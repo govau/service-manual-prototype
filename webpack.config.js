@@ -62,42 +62,24 @@ export default (config = {}) => {
         // And *.global.css are considered as global (normal) CSS
 
         // *.css => CSS Modules
-        // {
-        //   test: /\.css$/,
-        //   //exclude: /\.global\.css$/,
-        //   include: path.resolve(__dirname, "src"),
-        //   loader: ExtractTextPlugin.extract({
-        //     fallback: "style-loader",
-        //     use: [
-        //       {
-        //         loader: "css-loader",
-        //         // query: {
-        //         //   modules: false,
-        //         //   // localIdentName: (
-        //         //   //   config.production
-        //         //   //   ? "[hash:base64:5]"
-        //         //   //   : "[path][name]--[local]--[hash:base64:5]"
-        //         //   // ),
-        //         // },
-        //       },
-        //       {
-        //         loader: "postcss-loader",
-        //         // query for postcss can't be used right now
-        //         // https://github.com/postcss/postcss-loader/issues/99
-        //         // meanwhile, see webpack.LoaderOptionsPlugin in plugins list
-        //         // query: { plugins: postcssPlugins },
-        //       },
-        //     ],
-        //   }),
-        // },
-        // *.global.css => global (normal) css
         {
           test: /\.css$/,
+          exclude: /\.global\.css$/,
           include: path.resolve(__dirname, "src"),
           loader: ExtractTextPlugin.extract({
             fallback: "style-loader",
             use: [
-              "css-loader",
+              {
+                loader: "css-loader",
+                query: {
+                  modules: false,
+                  localIdentName: (
+                    config.production
+                    ? "[hash:base64:5]"
+                    : "[path][name]--[local]--[hash:base64:5]"
+                  ),
+                },
+              },
               {
                 loader: "postcss-loader",
                 // query for postcss can't be used right now
@@ -108,6 +90,24 @@ export default (config = {}) => {
             ],
           }),
         },
+        // *.global.css => global (normal) css
+        // {
+        //   test: /\.global\.css$/,
+        //   include: path.resolve(__dirname, "src"),
+        //   loader: ExtractTextPlugin.extract({
+        //     fallback: "style-loader",
+        //     use: [
+        //       "css-loader",
+        //       {
+        //         //loader: "postcss-loader",
+        //         // query for postcss can't be used right now
+        //         // https://github.com/postcss/postcss-loader/issues/99
+        //         // meanwhile, see webpack.LoaderOptionsPlugin in plugins list
+        //         // query: { plugins: postcssPlugins },
+        //       },
+        //     ],
+        //   }),
+        // },
         // ! \\
         // If you want global CSS only, just remove the 2 sections above
         // and use the following one
