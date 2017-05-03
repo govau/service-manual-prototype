@@ -8,7 +8,7 @@ script:
 before_deploy:
   - yarn build
 deploy:
-  skip_cleanup: true
+  skip_cleanup: false
   provider: surge
   project: dist
   domain: service-manual-prototype.surge.sh
