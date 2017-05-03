@@ -1,9 +1,10 @@
 import React, { PropTypes } from "react"
 
-import styles from "./index.css"
+import "./../uikit/css/body.css"
+import "./../uikit/css/grid-12.css"
 
 const Container = (props) => (
-  <div className={ styles.container }>
+  <div className='uikit-body uikit-grid'>
     { props.children }
   </div>
 )

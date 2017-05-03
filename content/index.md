@@ -1,5 +1,5 @@
 ---
-title: Phenomic base theme
+title: Hi there. Welcome to the service manual
 layout: Homepage
 hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/
@@ -8,7 +8,9 @@ cta:
   link: "about"
 ---
 
-Hi there. Before having fun with Phenomic, be sure to read the documentation :
+The content for this page live at [https://github.com/govau/service-manual-prototype/blob/master/content/index.md](https://github.com/govau/service-manual-prototype/blob/master/content/index.md)
+
+This site serves static assets. The static assets are build using React. Phenomic compiles React into the static assets.
 
 * [How to setup a new project with Phenomic](https://phenomic.io/docs/setup/)
 * [Getting Started with Phenomic](https://phenomic.io/docs/getting-started/)
@@ -37,8 +39,5 @@ If you need to make adjustments, you can directly alter page layouts in
 small things like the header, footer, buttons and so on can be changed in
 ``src/components/``;
 and for colors and common CSS variables, you can modify ``postcss.config.js``.
-
-_You feel like the base theme is not enough or you just saw something wrong?_
-[Please help us make Phenomic better!](https://phenomic.io/contributing/)
 
 ---

@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react"
 
-import "./index.global.css"
-import "./highlight.global.css"
+import "./main.css"
+import "./components/uikit/css/core.css"
 
 import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
@@ -12,7 +12,11 @@ import Footer from "./components/Footer"
 const AppContainer = (props) => (
   <Container>
     <DefaultHeadMeta />
-    <Header />
+
+    <Header>
+      <h1 className="uikit-header-heading">Service manual prototype</h1>
+    </Header>
+
     <Content>
       { props.children }
     </Content>

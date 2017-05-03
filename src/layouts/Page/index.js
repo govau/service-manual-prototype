@@ -3,10 +3,7 @@ import Helmet from "react-helmet"
 import warning from "warning"
 import { BodyContainer, joinUri, Link } from "phenomic"
 
-import Button from "../../components/Button"
-import Loading from "../../components/Loading"
-
-import styles from "./index.css"
+import "./index.css"
 
 const Page = (
   {
@@ -51,39 +48,29 @@ const Page = (
   ]
 
   return (
-    <div className={ styles.page }>
+    <div className='f'>
       <Helmet
         title={ metaTitle }
         meta={ meta }
       />
       {
-        <div
-          className={ styles.hero }
-          style={ head.hero && {
-            background: `#111 url(${ head.hero }) 50% 50% / cover`,
-          } }
-        >
-          <div className={ styles.header }>
-            <div className={ styles.wrapper }>
-              <h1 className={ styles.heading }>{ head.title }</h1>
-              {
-                head.cta &&
-                <Link to={ head.cta.link }>
-                  <Button className={ styles.cta } light { ...head.cta.props }>
-                    { head.cta.label }
-                  </Button>
-                </Link>
-              }
-            </div>
+        <div className='f'>
+          <div className='f'>
+            <h1 className='f'>{ head.title }</h1>
+            {
+              head.cta &&
+              <Link to={ head.cta.link }>
+              </Link>
+            }
           </div>
         </div>
       }
-      <div className={ styles.wrapper + " " + styles.pageContent }>
+      <div className='f'>
         { header }
-        <div className={ styles.body }>
+        <div className='f'>
           {
             isLoading
-            ? <Loading />
+            ? <BodyContainer>{ body }</BodyContainer>
             : <BodyContainer>{ body }</BodyContainer>
           }
         </div>

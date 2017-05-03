@@ -1,21 +1,17 @@
 import React from "react"
 
-import styles from "./index.css"
+import "./../uikit/css/footer.css"
 
 const Footer = () => (
-  <footer className={ styles.footer }>
-    { /* If you like Phenomic, this is a way to share the love ;) */ }
-    <p>
-      <a
-        href={ process.env.PHENOMIC_HOMEPAGE }
-        className={ styles.phenomicReference }
-      >
-        { "Website generated with " }
-        <span className={ styles.phenomicReferenceName }>
-          {  `<${ process.env.PHENOMIC_NAME} />` }
-        </span>
-      </a>
-    </p>
+  <footer className="uikit-footer" role="contentinfo">
+    <div className="container">
+      <section className="uikit-footer__end">
+        <img className="uikit-responsive-media-img" src="assets/coat-of-arms.png" height="100" alt="Commonwealth Coat of Arms crest logo"></img>
+        <p>
+          <small>© Commonwealth of Australia</small>
+        </p>
+      </section>
+    </div>
   </footer>
 )
 
