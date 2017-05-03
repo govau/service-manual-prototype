@@ -73,11 +73,11 @@ export default (config = {}) => {
                 loader: "css-loader",
                 query: {
                   modules: false,
-                  localIdentName: (
-                    config.production
-                    ? "[hash:base64:5]"
-                    : "[path][name]--[local]--[hash:base64:5]"
-                  ),
+                  // localIdentName: (
+                  //   config.production
+                  //   ? "[hash:base64:5]"
+                  //   : "[path][name]--[local]--[hash:base64:5]"
+                  // ),
                 },
               },
               {
