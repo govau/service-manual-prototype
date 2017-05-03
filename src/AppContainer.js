@@ -16,7 +16,6 @@ const AppContainer = (props) => (
     <Header>
       <h1 className="uikit-header-heading">Service manual prototype</h1>
     </Header>
-
     <Content>
       { props.children }
     </Content>
