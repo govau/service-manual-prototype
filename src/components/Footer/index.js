@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./../uikit/css/footer.css"
+import "../uikit/css/footer.css"
 
 const Footer = () => (
   <footer className="uikit-footer" role="contentinfo">

@@ -8,7 +8,7 @@ cta:
   link: "about"
 ---
 
-The content for this page live at [https://github.com/govau/service-manual-prototype/blob/master/content/index.md](https://github.com/govau/service-manual-prototype/blob/master/content/index.md)
+The content for this page lives at [https://github.com/govau/service-manual-prototype/blob/master/content/index.md](https://github.com/govau/service-manual-prototype/blob/master/content/index.md)
 
 This site serves static assets. The static assets are build using React. Phenomic compiles React into the static assets.
 
