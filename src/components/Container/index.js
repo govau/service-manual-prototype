@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 
-//import "../uikit/css/body.css"
+import "../uikit/css/body.css"
 import "../uikit/css/grid-12.css"
 
 const Container = (props) => (
