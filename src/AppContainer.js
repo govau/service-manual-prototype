@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react"
 
 import "./main.css"
-import "./components/uikit/css/core.css"
+//import "./components/uikit/css/core.css"
 
 import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
