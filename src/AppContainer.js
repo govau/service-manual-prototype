@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import { Link } from "phenomic"
 
 import "./main.css"
 //import "./components/uikit/css/core.css"
@@ -15,12 +16,16 @@ const AppContainer = (props) => (
     <DefaultHeadMeta />
 
     <Header>
-      <h1 className="uikit-header-heading">Service manual prototype</h1>
+      <Link to={ '/' }>
+        <h1 className="uikit-header-heading">Service manual prototype</h1>
+      </Link>
     </Header>
+
     <Content>
       { props.children }
       <LatestNewsNav />
     </Content>
+
     <Footer />
   </Container>
 )
