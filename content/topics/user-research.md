@@ -1,8 +1,7 @@
 ---
-title: Another news article from the service manual
-date: 2016-02-14
-layout: Post
-description: Here is a news article description!
+title: User research
+layout: Topic
+description: Here is a short description about user research
 ---
 
 <!-- start lipsum code -->
