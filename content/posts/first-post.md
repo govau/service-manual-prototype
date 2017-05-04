@@ -1,5 +1,5 @@
 ---
-title: First Post, no hero.
+title: Some service manual news
 date: 2016-01-22
 layout: Post
 ---

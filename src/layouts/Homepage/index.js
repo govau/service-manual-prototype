@@ -1,11 +1,15 @@
 import React from "react"
 
 import Page from "../Page"
+import HomeTopicNav from "../../components/HomeTopicNav"
 
 const Homepage = (props) => {
   return (
-    <Page { ...props }>
-    </Page>
+    <div>
+      <Page { ...props }>
+      </Page>
+      <HomeTopicNav />
+    </div>
   )
 }
 

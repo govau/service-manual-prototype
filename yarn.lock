@@ -37,6 +37,13 @@
     "@gov.au/core" "^0.1.0"
     "@gov.au/pancake" "~1"
 
+"@gov.au/headings@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gov.au/headings/-/headings-0.1.0.tgz#0fc38a4ebafd6dcb92bcd6f29750ff60b1752665"
+  dependencies:
+    "@gov.au/core" "^0.1.0"
+    "@gov.au/pancake" "~1"
+
 "@gov.au/pancake-sass@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@gov.au/pancake-sass/-/pancake-sass-1.0.11.tgz#558388b5e46d8a514b5336b359d93bdd971e9ca7"
