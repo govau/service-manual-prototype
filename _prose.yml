@@ -1,0 +1,4 @@
+# Config for http://prose.io editor.
+prose:
+  rooturl: 'content'
+  media: 'content/assets'
