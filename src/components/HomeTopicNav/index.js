@@ -14,9 +14,9 @@ const HomeTopicNav = ( props, { collection } ) => {
   return (
     <div>
       <h2>
-        { "Topic list" }
+        { "Homepage topic list" }
       </h2>
-      <TileNav topics={ serviceTopics } />
+      <TileNav items={ serviceTopics } />
     </div>
   )
 }

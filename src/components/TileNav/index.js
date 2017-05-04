@@ -2,13 +2,13 @@ import React, { PropTypes } from "react"
 
 import PagePreview from "../PagePreview"
 
-const TileNav = ({ topics }) => {
+const TileNav = ({ items }) => {
   return (
     <ul className="simonkit-tilenav">
       {
-        topics.map(( topic ) => (
-          <li key={ topic.title } className="simonkit-tilenav__tile">
-            <PagePreview { ...topic } />
+        items.map(( item ) => (
+          <li key={ item.title } className="simonkit-tilenav__tile">
+            <PagePreview { ...item } />
           </li>
         ))
       }
@@ -17,7 +17,7 @@ const TileNav = ({ topics }) => {
 }
 
 TileNav.propTypes = {
-  topics: PropTypes.array.isRequired,
+  items: PropTypes.array.isRequired,
 }
 
 export default TileNav

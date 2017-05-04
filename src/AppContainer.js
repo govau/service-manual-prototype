@@ -8,6 +8,7 @@ import DefaultHeadMeta from "./components/DefaultHeadMeta"
 import Header from "./components/Header"
 import Content from "./components/Content"
 import Footer from "./components/Footer"
+import LatestNewsNav from "./components/LatestNewsNav"
 
 const AppContainer = (props) => (
   <Container>
@@ -18,6 +19,7 @@ const AppContainer = (props) => (
     </Header>
     <Content>
       { props.children }
+      <LatestNewsNav />
     </Content>
     <Footer />
   </Container>
