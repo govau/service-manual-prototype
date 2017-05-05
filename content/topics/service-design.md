@@ -1,6 +1,8 @@
 ---
 title: Service design
 description: Service design is a great thing
+published: true
+layout: Topic
 ---
 
 ## A New Topic
