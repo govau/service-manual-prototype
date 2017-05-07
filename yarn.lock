@@ -9,9 +9,16 @@
     "@gov.au/core" "^0.1.0"
     "@gov.au/pancake" "~1"
 
-"@gov.au/core@0.1.1", "@gov.au/core@^0.1.0":
+"@gov.au/core@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@gov.au/core/-/core-0.1.1.tgz#6d042a9ff5913df4fbc3f54ce41609cf73a7f7c8"
+  dependencies:
+    "@gov.au/pancake" "~1"
+    sass-versioning "^0.2.2"
+
+"@gov.au/core@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@gov.au/core/-/core-0.1.2.tgz#c51298b5301ec8882cc844b22a405d53a69a58ae"
   dependencies:
     "@gov.au/pancake" "~1"
     sass-versioning "^0.2.2"
@@ -40,6 +47,13 @@
 "@gov.au/headings@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@gov.au/headings/-/headings-0.1.0.tgz#0fc38a4ebafd6dcb92bcd6f29750ff60b1752665"
+  dependencies:
+    "@gov.au/core" "^0.1.0"
+    "@gov.au/pancake" "~1"
+
+"@gov.au/page-alerts@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gov.au/page-alerts/-/page-alerts-0.1.1.tgz#b5f56121b4474e4f11a19d80c41b658a32ab0584"
   dependencies:
     "@gov.au/core" "^0.1.0"
     "@gov.au/pancake" "~1"

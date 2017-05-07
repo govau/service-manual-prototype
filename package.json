@@ -15,7 +15,7 @@
   },
   "phenomic": {
     "CNAME": false,
-		"offline": true
+    "offline": true
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
   "babel": {
@@ -129,11 +129,12 @@
   },
   "dependencies": {
     "@gov.au/body": "^0.1.1",
-    "@gov.au/core": "0.1.1",
+    "@gov.au/core": "^0.1.2",
     "@gov.au/footer": "^0.1.0",
     "@gov.au/grid-12": "^0.1.0",
     "@gov.au/header": "^1.0.0",
     "@gov.au/headings": "^0.1.0",
+    "@gov.au/page-alerts": "^0.1.1",
     "@gov.au/pancake-sass": "^1.0.11"
   },
   "pancake": {
