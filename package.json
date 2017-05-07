@@ -16,7 +16,7 @@
   "phenomic": {
     "CNAME": false,
     "offline": true,
-    "clientScripts": false,
+    "clientScripts": false
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
   "babel": {
