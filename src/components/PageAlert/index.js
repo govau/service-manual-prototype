@@ -8,7 +8,7 @@ import "../uikit/css/page-alerts.css"
  * @param {Object} props - Properties passed to component
  * @returns {ReactElement}
  */
-const PageAlert = (props) => {
+const PageAlert = ( props ) => {
   let classes = classNames({
     'uikit-page-alerts': true,
     [`uikit-page-alerts--${props.variant}`]: props.variant,
@@ -16,16 +16,16 @@ const PageAlert = (props) => {
 
   return (
     <div className={ classes } role='alert'>
-      { props.children }    
+      { props.children }
     </div>
   );
 };
 
 PageAlert.propTypes = {
   /** Text that appears within the component */
-  children: React.PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
   /** Various color schemes */
-  variant: React.PropTypes.oneOf([null, 'info', 'success', 'warning', 'error']),
+  variant: PropTypes.oneOf([null, 'info', 'success', 'warning', 'error']),
 };
 
 
